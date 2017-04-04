@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema3-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.structure-1.4.5.min.css"/> 
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/descarga6.jpg','imagenes/image.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Contaminacion</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<!-- Start WOWSlider.com BODY section -->
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/comta.jpg" alt="comta" title="comta" id="wows1_0"/></li>
+		<li><img src="data1/images/contam.jpg" alt="contam" title="contam" id="wows1_1"/></li>
+		<li><img src="data1/images/contami.jpg" alt="contami" title="contami" id="wows1_2"/></li>
+		<li><img src="data1/images/contamina.jpg" alt="contamina" title="contamina" id="wows1_3"/></li>
+		<li><img src="data1/images/contaminacion.jpg" alt="contaminacion" title="contaminacion" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/lacontami.jpg" alt="bootstrap carousel" title="lacontami" id="wows1_5"/></a></li>
+		<li><img src="data1/images/sueloconta.jpg" alt="sueloconta" title="sueloconta" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="comta"><span><img src="data1/tooltips/comta.jpg" alt="comta"/>1</span></a>
+		<a href="#" title="contam"><span><img src="data1/tooltips/contam.jpg" alt="contam"/>2</span></a>
+		<a href="#" title="contami"><span><img src="data1/tooltips/contami.jpg" alt="contami"/>3</span></a>
+		<a href="#" title="contamina"><span><img src="data1/tooltips/contamina.jpg" alt="contamina"/>4</span></a>
+		<a href="#" title="contaminacion"><span><img src="data1/tooltips/contaminacion.jpg" alt="contaminacion"/>5</span></a>
+		<a href="#" title="lacontami"><span><img src="data1/tooltips/lacontami.jpg" alt="lacontami"/>6</span></a>
+		<a href="#" title="sueloconta"><span><img src="data1/tooltips/sueloconta.jpg" alt="sueloconta"/>7</span></a>
+        </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<li class="ui-fisrt-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que es contaminacion?</h2>
+<p>Muestra informacion sobre la contaminacion.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de contaminacion</h2>
+<p>Muestralos tipos de contaminacion.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias de contaminacion</h2>
+<p>Se muestra las consecuencias de la contaminacion.</p>
+</a>
+</li>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Reciclaje</h2>
+<p>Se muestra como puedes reciclar.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas preventivas</h2>
+<p>Estas son las medidas preventivas</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminacion en mi entorno </h2>
+<p>Se muestran la contaminacion</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo1.jpg" width="128" height="128">
+</div>
+<div>
+<h4> Aplicacion Tres DMVX</h4>
+<h4>Dulce Maria Vazquez Ximil</h4></div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1> ¿Qué es la contaminacion? </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso.1 El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).
+Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.
+La contaminación puede clasificarse según el tipo de fuente de donde proviene, o por la forma de contaminante que emite o medio que contamina.
+ </h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1></h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/contami.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1></h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/contamina.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, DMVX</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Tipos de contaminacion </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><p>•Contaminación del Agua Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.</p>
+
+<p>Contaminación del Aire</p>
+<p>Contaminación del Suelo</p>
+<p>Contaminación Térmica:•	Es un hecho bien conocido que la quema de combustibles fósiles en centrales eléctricas, hornos industriales y motores de vehículos causa la contaminación del aire. Sin embargo, un menor impacto conocido asociado con estos procesos de generación de energía es la contaminación térmica. </p>
+<p>La Contaminación radiactiva</p>
+<p>Contaminación Acústica</p>
+<p>Contaminación Lumínica:•	La luz artificial se está convirtiendo en un peligro para nuestra planeta. Esta no sólo afecta a la belleza natural, sino a seres humanos, los animales, las aves y la vegetación. Por lo tanto, el ciclo de vida de los seres vivos también está siendo afectada por la contaminación lumínica. </p>
+</h2></div>
+<p> <a href="https://calentamientoglobalclima.org/" target="_self">Calentamiento global</a></p>
+<p>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminacion del suelo</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/sueloconta.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminacion aire</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imag-prueba','','imagenes/contaminacion.jpg',1)"><img src="imagenes/airecont.jpg" width="50%" height="50%" id="imag-prueba"> </a> </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, DMVX</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Consecuencias de contaminacion</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+         <h2> 
+<p>Problemas para la salud: la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.</p>
+
+<p>Debilitamiento de la capa de ozono: la capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. </p>
+
+<p>La contaminación afecta al suelo y al agua: la contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. </p>
+<p>La contaminación afecta al clima: seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas</p></h2></div>
+       </div>
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1></h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/lacontami.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1></h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/comta.jpg" width="50%" height="50%"> 
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1></h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/vidacin.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, DMVX</h4>
+</div>
+</div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Tres, DMVX</h4>
+        </div>
+        </div>
+        <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>>Reciclaje</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+         <h2> 
+<p>Reducir: es la "erre" más importante ya que tiene el efecto más directo y amplio en la reducción de los daños al medio ambiente </p>
+<p>Reutilizar:significa alargar la vida de cada producto desde cuando se compra hasta cuando se tira. La mayoría de los bienes pueden tener más de una vida útil, sea reparándolos o utilizando la imaginación para darles otro uso. </p>
+<p>Reciclar: es la erre más común y menos eficaz. Se trata de rescatar lo posible de un material que ya no sirve para nada (comúnmente llamado basura) y convertirlo en un producto nuevo.
+</p></h2></div>
+       </div>
+       <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Reducir</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/reducir.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Reutilizar</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/reutilizar.jpg" width="50%" height="50%"> 
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Reciclar</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/reciclar.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, DMVX</h4>
+</div>
+</div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Tres, DMVX</h4>
+        </div>
+        </div>
+  <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Medidas preventivas</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>
+      <p>  Crear conciencia ciudadana.</p>
+<p>No quemar ni talar plantas.</p>
+<p>Colocar la basura en los lugares apropiados.</p>
+<p>Regular el servicio de aseo urbano.</p>
+<p>Controlar el uso de fertilizantes y pesticidas.</p>
+<p>Crear vías de desagüe para las industrias que no lleguen a los mares o ríos utilizados para el servicio o consumo del ser humano o de los animales.</p>
+<p>Controlar los derrames accidentales de petróleo.</p>
+<p>Controlar los relaves mineros.</p>
+<p>Reciclar objetos (darles un nuevo uso).</p>
+<p>Tomar y generar conciencia de lo que está sucediendo.</p>
+<p>Realizar campañas de apoyo.</p>
+<p>Evitar el uso de aerosoles.</p>
+<p>Tener sentido de responsabilidad.</p> </h2>
+<p><a href="http://www.profepa.gob.mx/innovaportal/v/1362/1/mx/prevencion_de_la_contaminacion.html" target="_self">Prevencion de la contaminacion</a></p>
+        <a href=" target="_self" onMouseOver="MM_swapImage('Image','','imagenes/medidas.jpg',1)"" onMouseOut="MM_swapImgRestore()"#><img src="imagenes/contam.jpg" width="50%" height="50%" id="Image"></a>
+      </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion Tres, DMVX</h4>
+      </div>
+      </div>
+      <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Contaminacion en mi entorno </h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2><p>La contaminación es la alteración nociva del estado natural de un medio como consecuencia de la introducción de un agente totalmente ajeno a ese medio (contaminante), causando inestabilidad, desorden, daño o malestar en un ecosistema, en el medio físico o en un ser vivo.
+</p>
+<p>No usar el carro</p>
+<p>No quemar basura</p>
+<p>Sembrar árboles y colaborar en el mantenimiento de las áreas verdes</p>
+<p>No arrojar la basura y los desechos en la calle ni en cualquier lugar.</p>
+<p>Evitar los ruidos molestos (música fuerte, bocinas, escapes abiertos).</p>
+<p>Se debe usar alternativas menos contaminantes como abonos orgánicos en lugar de los sintéticos, transformar los desechos urbanos orgánicos en abonos.</p>
+<p>Educar a la comunidad a través de los medios de comunicación (TV, radio, periódicos) para concientizar a las personas por el respeto hacia el medio ambiente.</p>
+</h2></div>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1></h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/descarga7.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1></h1>
+<div>
+<p></p>
+<br>
+</div>
+<div>
+<img src="imagenes/ss.jpg" width="50%" height="50%"> </div>
+</div>
+</div>
+    </body>
+</html>
